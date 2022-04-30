@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/mattn/go-sqlite3"
+	"github.com/dean2021/go-sqlite3"
 )
 
 type seriesModule struct{}

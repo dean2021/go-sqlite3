@@ -235,7 +235,7 @@ const (
 )
 
 // This variable can be replaced with -ldflags like below:
-// go build -ldflags="-X 'github.com/mattn/go-sqlite3.driverName=my-sqlite3'"
+// go build -ldflags="-X 'github.com/dean2021/go-sqlite3.driverName=my-sqlite3'"
 var driverName = "sqlite3"
 
 func init() {
@@ -883,7 +883,7 @@ func (c *SQLiteConn) exec(ctx context.Context, query string, args []namedValue) 
 		s.Close()
 		if tail == "" {
 			if res == nil {
-				// https://github.com/mattn/go-sqlite3/issues/963
+				// https://github.com/dean2021/go-sqlite3/issues/963
 				res = &SQLiteResult{0, 0}
 			}
 			return res, nil

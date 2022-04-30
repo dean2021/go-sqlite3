@@ -3,7 +3,7 @@ package main
 import (
 	"database/sql"
 
-	_ "github.com/mattn/go-sqlite3"
+	_ "github.com/dean2021/go-sqlite3"
 )
 
 func main() {
